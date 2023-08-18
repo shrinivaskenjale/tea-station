@@ -15,18 +15,16 @@ navClose.addEventListener("click", () => {
 });
 
 // handle form
-const form = document.querySelector('.contact-form form');
-const formControls=document.querySelectorAll('.form-control');
-const btn=document.querySelector('.submit-btn');
+const form = document.querySelector(".contact-form form");
+const formControls = document.querySelectorAll(".form-control");
+const btn = document.querySelector(".submit-btn");
 
-form.addEventListener('submit',(e)=>{
+form.addEventListener("submit", (e) => {
   e.preventDefault();
-  console.log('asdlfjd');
-  formControls.forEach(control=>{
-    control.value="";
-  })
-  btn.innerText="Sent"
-  btn.disabled=true;
-  btn.classList.add('disabled');
-  
-})
+  formControls.forEach((control) => {
+    control.value = "";
+  });
+  btn.innerText = "Sent";
+  btn.disabled = true;
+  btn.classList.add("disabled");
+});
